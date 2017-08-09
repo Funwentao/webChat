@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>登录</title>
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+	</head>
+	<body>
+		<div class="containe" style="margin-top:100px;">
+			<div class="row">
+				<div class="col-lg-3 col-lg-offset-6" id="formdiv">
+					<center><h2>阅过视界</h2></center>
+					<hr>
+					<from action="#" class="from-inline">
+					<div class="form-group" style="margin-bottom:20px;">
+							<select id="type" style="position:absolute;right:15px;top:90px;">
+							<option value="1">普通用户 </option>
+							<option value="2">公众号用户 </option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="username">用户名：</label>							
+							<div class="input-group">
+								<input type="text" id="username" class="form-control"/>
+								<span id="d1" class="input-group-addon" style="cursor:pointer;">&times;</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="password">密码：</label>
+							<div class="input-group">
+								<input type="password" id="password" class="form-control"/>	
+								<span id="d2" class="input-group-addon" style="cursor:pointer;">&times;</span>
+							</div>													
+						</div>
+						
+							<div class="yzm" style="margin-top:30px;margin-bottom:20px">							
+								<input type="text" id="yzm" class="form-control" style="width:40% ;display:inline;margin-right:50px"/>	
+								<img src="yzm.jsp"  style="width:60px;height:30px;cursor:pointer;" id="yzmi"/>												
+						</div>
+						
+						<div class="form-group">
+							<input type="checkbox" id="remember"/>
+							<label for="remember">记住密码</label>
+						</div>
+						<div class="form-group">
+							<a href="#" class="btn btn-lg btn-primary btn-block" id="login" >登录</a>
+						</div>
+						
+						<div class="register">
+						<a href="register.html" style="float:right;font-size:15px">注册</a> 
+						</div>
+					</from>
+				</div>				
+				
+			</div>
+		</div>
+		<div class="modal fade modal1">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-exclamation-sign" style="margin-right:10px; font-size: 20px; color: red;"></span>
+							<span id="message"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/login.js"></script>
+	</body>
+</html>

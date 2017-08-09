@@ -1,0 +1,19 @@
+body{
+	background-color: #CCCCCC !important;
+}
+#formdiv{
+	border-radius:5px ;
+	padding-top: 20px;
+	height:480px;
+	border:1px solid #c0cdd9;
+  background-color: #f9fbfe;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+#formdiv2{
+	border-radius:5px ;
+	padding-top: 20px;
+	height:500px;
+	border:1px solid #c0cdd9;
+    background-color: #f9fbfe;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}

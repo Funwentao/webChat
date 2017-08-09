@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/user.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				
+				
+				
+				
+				<div class="col-lg-3 col-lg-offset-1" id="left">
+					
+					
+					<!--账户-->
+					<div class="person" style="padding-top: 20px;">
+						<img src="img/head.jpg"  id="headpic2" style="height:40px;width:40px;border-radius:5px;cursor:pointer;"/>
+						<span class="glyphicon glyphicon-list menu " data-toggle="dropdown"></span>
+						<ul class="dropdown-menu menuul nav nav-pills nav-stacked">
+						<li><a href="javascript:;" class="btn" id="tuichu">退出</a></li>		
+						</ul>
+					</div>
+	
+	
+	
+					<!--搜索栏-->
+					<div class="input-group" style="margin-top:20px;">
+						<span id="searchspan" class="input-group-addon glyphicon glyphicon-search" style="top:0px;color:#fff;background-color: #26292E;border-color:#26292E;cursor:pointer;"></span>
+						<input type="text" id="search" placeholder="搜索" class="form-control" style="background-color: #26292E;border-color: #26292E;color:#fff;">
+					</div>
+					
+					<!--选项-->
+					<div class="tabdiv" style="margin-top:10px;">
+						<ul class="nav nav-tabs nav-justified">
+							<li id="guanzhu"><a style="border-radius:0px" href="javascript:;" title="我的关注" ><span class="glyphicon glyphicon-heart myicon" ></span></a></li>
+							<li id="faxian"><a style="border-radius:0px" href="javascript:;" title="发现更多" ><span class="glyphicon glyphicon-search myicon"></span></a></li>
+							<li id="shoucang"><a style="border-radius:0px" href="javascript:;" title="我的收藏" ><span class="glyphicon glyphicon-star myicon" ></span></a></li>
+						</ul>
+					</div>
+					
+					
+					
+					<!--公众号列表-->
+					
+					
+					<div class="content">
+						<ul>
+							
+						</ul>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="col-lg-7" id="right">
+					
+					
+					
+					<!--背景图-->
+					
+					
+					
+					<img src="img/backg.jpg" id="backg" >
+					
+					
+					
+					<!--列表头-->
+					
+					<div class="title">
+						<div class="input-group" id="searchdiv">							
+							<span id="searchepaper" class="input-group-addon glyphicon glyphicon-search" style="top:0px;color:#000;background-color: #fff;border-color:#fff;cursor:pointer"></span>
+							<input type="text" id="search2" placeholder="搜索" class="form-control" style="background-color:#fff;border-color:#fff;color:#000; width:30%;">
+						</div>
+						
+						
+						<span class="glyphicon glyphicon-heart" id="like" data-toggle="dropdown"></span>
+						<ul class="dropdown-menu menuul2 nav nav-pills nav-stacked">
+							<li><a href="#" class="btn" id="quxiao">取消关注</a></li>
+						</ul>
+						
+						
+						
+						<span class="glyphicon glyphicon-arrow-left" id="back"></span>
+						
+											
+						<span id="title" style="position:absolute;left:325px;">看世界</span>					
+					</div>
+					
+
+
+
+
+					<!--文章列表-->
+					
+					<div class="main">
+						<center>
+							<ul class="mainul">
+							</ul>
+						</center>						
+					</div>
+					
+					
+					<!-- 文章内容-->
+					
+					
+					<div class="content2">
+						<div class="content3">
+							<h2 id="paperh2">通过书看世界</h2>
+							<p style="color:#696969;"><span id="papertime">2016-12-12</span>&emsp;<sapn class="author" id="paperauthour">看世界</sapn></p>
+							<div id="papercontent" style="margin-bottom:50px"></div>
+							<div class="dianzan">
+								<span class="glyphicon glyphicon-thumbs-up" id="zan"></span>
+								<span class="glyphicon glyphicon-comment" id="com"></span>
+								
+							</div>
+						</div>
+						<div class="commit">
+							<div class="commit1">
+								<span class="glyphicon glyphicon-comment" id="comnum">111</span>
+								<span class="glyphicon glyphicon-thumbs-up" id="zannum">111</span>
+							</div>
+							<hr>
+							<div class="ccontent">
+								<ul class="cul1">
+								</ul>
+								<ul class="cul2" style="display: none;">
+								
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+	
+	
+	
+					<!--账户-->
+					
+					<div class="account">
+						<div id="headpic">
+							<img src="img/back.png" id="backpic" class="seticon"></img>
+							<input type="file" id="headinput"  />
+							<img src="img/set1.png" id="set" class="seticon"></img> 
+							<img src="img/head.jpg" id="img" ></img>
+						</div>
+						<div id="information">
+							<table style="width:492px; background-color:#fff;" id="intable">
+								<tbody >
+										<tr class="before"><th align="left">&nbsp;&nbsp;账号：</th><td id="account"align="center"></td></tr>
+									<tr class="before"><th align="left">&nbsp;&nbsp;姓名：</th><td id="name" align="center"></td></tr>
+									<tr class="before"><th align="left">&nbsp;&nbsp;性别：</th><td id="sex" align="center"></td></tr>
+									<tr class="before"><th align="left">&nbsp;&nbsp;手机：</th><td id="phone" align="center"></td></tr>
+									<tr class="before"><th align="left">&nbsp;&nbsp;邮箱：</th><td id="mailbox" align="center"></td></tr>
+									<tr class="before"><td  align="center" colspan="2"><button class="btn btn-primary" id="bianji" title="编辑我的个人信息" >Edit</button></td></tr>
+									<tr class="after"><th align="left">&nbsp;&nbsp;姓名：</th><td  align="center"><input class="myinput" type="text" id="editname"/></td></tr>
+									<tr class="after"><th align="left">&nbsp;&nbsp;性别：</th><td  align="center"><input class="myinput" type="text" id="editsex"/></td></tr>
+									<tr class="after"><th align="left">&nbsp;&nbsp;手机：</th><td  align="center"><input class="myinput" type="text" id="editphone"/></td></tr>
+									<tr class="after"><th align="left">&nbsp;&nbsp;邮箱：</th><td  align="center"><input class="myinput" type="text" id="editmailbox"/></td></tr>
+									<tr class="after"><td  align="center" colspan="2"><button class="btn btn-primary" id="confirm" title="确认">Confirm</button></td></tr>
+									<tr class="after1"><th align="left">&nbsp;&nbsp;旧密码：</th><td  align="center"><input class="myinput" type="password" id="oldpassword"/></td></tr>
+									<tr class="after1"><th align="left">&nbsp;&nbsp;新密码：</th><td  align="center"><input class="myinput" type="password" id="password1"/></td></tr>
+									<tr class="after1"><th align="left">&nbsp;&nbsp;确认密码：</th><td  align="center"><input class="myinput" type="password" id="password2"/></td></tr>
+									<tr class="after1"><td  align="center" colspan="2"><button  class="btn btn-primary" id="confirm1" title="确认">Confirm</button></td></tr>
+								</tbody>
+							</table>
+						</div>						
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+		
+		<!-- 个人资料弹窗 -->
+		<div class="modal fade modal1">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-ok-circle" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="message"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button1">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+				<!-- 取消关注确认后不刷新弹窗-->
+		<div class="modal fade modal10">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-ok-circle" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="message10"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button10">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<!-- 取消收藏确认后不刷新弹窗-->
+		<div class="modal fade modal12">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-ok-circle" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="message12"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button12">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+			<!-- 关注确认后不刷新弹窗-->
+		<div class="modal fade modal11">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-ok-circle" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="message11"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button11">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<!-- 收藏确认后不刷新弹窗-->
+		<div class="modal fade modal13">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-ok-circle" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="message13"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button13">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<!--  提交文章-->
+		<div class="modal fade modal2">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-question-sign" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="message2"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button2">取消</button>
+						<button class="btn btn-primary" id="button3">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		
+				<!--  删除文章-->
+		<div class="modal fade modal4">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>请输入评论：</h3>
+					</div>
+					<div class="modal-body">
+						<textarea id="commit" class="comtext"></textarea>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button5">取消</button>
+						<button class="btn btn-primary" id="button6">提交</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		
+		
+		<!--报错信息弹窗  -->
+		<div class="modal fade modal3">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-exclamation-sign" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="warnmessage"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button4">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="modal fade modal20">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-ok-circle" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="message20"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button20">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/user.js"></script>
+	</body>
+</html>

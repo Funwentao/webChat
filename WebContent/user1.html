@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/user1.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script>
+			window.UEDITOR_HOME_URL="ueditor/"
+		</script>
+	<script type="text/javascript" src="/ueditor/ueditor.config.js"></script> <!-- 这个文件在前面-->  
+	<script type="text/javascript" src="/ueditor/ueditor.all.min.js"></script>  
+	<script type="text/javascript" src="/ueditor/lang/zh-cn/zh-cn.js"></script>  
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				
+				
+				
+				
+				<div class="col-lg-3 col-lg-offset-1" id="left">
+					
+					
+					<!--账户-->
+					<div class="person" style="padding-top: 20px;">
+						<img src="img/head.jpg"  id="headpic2" style="height:40px;width:40px;border-radius:5px;cursor:pointer;"/>
+						<span class="glyphicon glyphicon-list menu " data-toggle="dropdown"></span>
+						<ul class="dropdown-menu menuul nav nav-pills nav-stacked">
+							<li ><a href="#" class="btn" id="addpaper">新增文章</a></li>
+							<li><a href="javascript:;" class="btn" id="tuichu">退出</a></li>
+						</ul>
+					</div>
+	
+	
+	
+					<!--搜索栏-->
+					<div class="input-group" style="margin-top:20px;">
+						<span id="searchspan" class="input-group-addon glyphicon glyphicon-search" style="top:0px;color:#fff;background-color: #26292E;border-color:#26292E;cursor:pointer;"></span>
+						<input type="text" id="search" placeholder="搜索" class="form-control" style="background-color: #26292E;border-color: #26292E;color:#fff;">
+					</div>
+					
+				
+					
+					
+					
+					<!--文章列表-->
+					
+					
+					<div class="content">
+						<ul>
+						</ul>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="col-lg-7" id="right">
+					
+					
+					
+					<!--背景图-->
+					
+					
+					
+					<img src="img/backg.jpg" id="backg" >
+					
+					
+					
+					<!--列表头-->
+					
+					<div class="title">
+						<span class="glyphicon glyphicon-remove-circle" id="deletepaper" ></span>
+						
+						
+						<span class="glyphicon glyphicon-ok-circle" id="submitpaper"></span>
+
+					</div>
+					
+
+					
+					
+					
+					
+					<!-- 文章内容-->
+					
+					
+					<div class="content2">
+					<div class="input-group" style="box-shadow: 0 5px 15px rgba(0, 0, 0, .5);">
+							<span class="input-group-addon">
+								文章标题
+							</span>
+							<input id="headtitle" type="text" class="form-control"/>							
+						</div>	
+						<div class="ueditor" style="margin-top:20px;z-index:-1">
+							<script id="editor" type="text/plain" style="height:500px;"></script>
+						</div>
+						<script>
+							var ue=UE.getEditor('editor');
+							ue.addListener('ready',function(){
+								this.focus();
+							});
+						</script>
+						<div class="commit">
+							<div class="commit1">
+								<span class="glyphicon glyphicon-comment" id="comnum">111</span>
+								<span class="glyphicon glyphicon-thumbs-up" id="zannum">111</span>
+							</div>
+							<hr>
+							<div class="ccontent">
+								<ul class="cul1">
+									<li>
+										<div class="cccontent">
+											<img src="img/head.jpg"  class="cimg"> 
+											<span class="cname">方涛</span>
+											<span class="ctime">2016-12-12</span>
+											<p class="cp">通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过看世界通过书看世界通过通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过看世界通过书看世界通过通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过看世界通过书看世界通过通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过</p>
+										</div>
+										<div class="shenhe">
+										<button id="none" class="btn btn-primary">隐藏</button>
+										<button id="delete" class="btn btn-primary">删除</button>
+										</div>
+									</li>
+									<li>
+										<div class="cccontent">
+											<img src="img/head.jpg"  class="cimg"> 
+											<span class="cname">方涛</span>
+											<span class="ctime">2016-12-12</span>
+											<p class="cp">通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过看世界通过书看世界通过通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过看世界通过书看世界通过通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过看世界通过书看世界通过通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过书看世界通过</p>
+										</div>
+									</li>
+								</ul>
+								<ul class="cul2" style="display: none;">
+									<li>
+										<div class="cccontent">
+											<img src="img/head.jpg"  class="cimg"> 
+											<span class="cname">方涛</span>
+											<span class="ctime">2016-12-12</span>
+										</div>
+									</li>
+									<li>
+										<div class="cccontent">
+											<img src="img/head.jpg"  class="cimg"> 
+											<span class="cname">方涛</span>
+											<span class="ctime">2016-12-12</span>
+										</div>
+									</li>
+									<li>
+										<div class="cccontent">
+											<img src="img/head.jpg"  class="cimg"> 
+											<span class="cname">方涛</span>
+											<span class="ctime">2016-12-12</span>
+										</div>
+									</li>
+									<li>
+										<div class="cccontent">
+											<img src="img/head.jpg"  class="cimg"> 
+											<span class="cname">方涛</span>
+											<span class="ctime">2016-12-12</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+	
+	
+	
+					<!--账户-->
+					
+					<div class="account">
+						<div id="headpic">
+							<img src="img/back.png" id="backpic" class="seticon"></img>
+							<input type="file" id="headinput"  />
+							<img src="img/set1.png" id="set" class="seticon"></img> 
+							<img src="img/head.jpg" id="img" ></img>
+						</div>
+						<div id="information">
+							<table style="width:492px; background-color:#fff;" id="intable">
+								<tbody >
+									<tr class="before"><th align="left">&nbsp;&nbsp;账号：</th><td id="account"align="center"></td></tr>
+									<tr class="before"><th align="left">&nbsp;&nbsp;姓名：</th><td id="name" align="center"></td></tr>
+									<tr class="before"><th align="left">&nbsp;&nbsp;性别：</th><td id="sex" align="center"></td></tr>
+									<tr class="before"><th align="left">&nbsp;&nbsp;手机：</th><td id="phone" align="center"></td></tr>
+									<tr class="before"><th align="left">&nbsp;&nbsp;邮箱：</th><td id="mailbox" align="center"></td></tr>
+									<tr class="before"><th align="left">&nbsp;&nbsp;简介：</th><td id="say" align="center"></td></tr>
+									<tr class="before"><td  align="center" colspan="2"><button class="btn btn-primary" id="bianji" title="编辑我的个人信息" >Edit</button></td></tr>
+									<tr class="after"><th align="left">&nbsp;&nbsp;姓名：</th><td  align="center"><input class="myinput" type="text" id="editname"/></td></tr>
+									<tr class="after"><th align="left">&nbsp;&nbsp;性别：</th><td  align="center"><input class="myinput" type="text" id="editsex"/></td></tr>
+									<tr class="after"><th align="left">&nbsp;&nbsp;手机：</th><td  align="center"><input class="myinput" type="text" id="editphone"/></td></tr>
+									<tr class="after"><th align="left">&nbsp;&nbsp;邮箱：</th><td  align="center"><input class="myinput" type="text" id="editmailbox"/></td></tr>
+									<tr class="after"><th align="left">&nbsp;&nbsp;简介：</th><td  align="center"><input class="myinput" type="text" id="editsay"/></td></tr>
+									<tr class="after"><td  align="center" colspan="2"><button class="btn btn-primary" id="confirm" title="确认">Confirm</button></td></tr>
+									<tr class="after1"><th align="left">&nbsp;&nbsp;旧密码：</th><td  align="center"><input class="myinput" type="password" id="oldpassword"/></td></tr>
+									<tr class="after1"><th align="left">&nbsp;&nbsp;新密码：</th><td  align="center"><input class="myinput" type="password" id="password1"/></td></tr>
+									<tr class="after1"><th align="left">&nbsp;&nbsp;确认密码：</th><td  align="center"><input class="myinput" type="password" id="password2"/></td></tr>
+									<tr class="after1"><td  align="center" colspan="2"><button  class="btn btn-primary" id="confirm1" title="确认">Confirm</button></td></tr>
+								</tbody>
+							</table>
+						</div>						
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+		
+		<!-- 个人资料弹窗 -->
+		<div class="modal fade modal1">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-ok-circle" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="message"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button1">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<!--  提交文章-->
+		<div class="modal fade modal2">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-question-sign" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="message2"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button2">取消</button>
+						<button class="btn btn-primary" id="button3">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		
+				<!--  删除文章-->
+		<div class="modal fade modal4">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-question-sign" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="message5"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button5">取消</button>
+						<button class="btn btn-primary" id="button6">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		
+		
+		<!--报错信息弹窗  -->
+		<div class="modal fade modal3">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>提示信息：</h3>
+					</div>
+					<div class="modal-body">
+						<center>
+							<span class="glyphicon glyphicon-exclamation-sign" style="margin-right:10px; font-size: 20px;"></span>
+							<span id="warnmessage"></span>
+						</center>	
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="button4">确定</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/user1.js"></script>
+	</body>
+</html>
